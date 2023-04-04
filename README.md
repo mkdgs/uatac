@@ -47,8 +47,8 @@ tarteaucitron.init({
 
     "handleBrowserDNTRequest": false, /* If Do Not Track == 1, disallow all */
 
-    - "removeCredit": false, /* Remove credit link */
-    - "moreInfoLink": true, /* Show more info link */
+-   "removeCredit": false, /* Remove credit link */
+    -"moreInfoLink": true, /* Show more info link */
     "useExternalCss": false, /* If false, the tarteaucitron.css file will be loaded */
     - "useExternalJs": false, /* If false, the tarteaucitron.services.js file will be loaded */
     + "servicesJs": '<?php echo $this->url ?>../js/services.js', /* If false, the tarteaucitron.services.js file will be loaded */

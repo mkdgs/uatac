@@ -1,13 +1,4 @@
-
-[![](https://data.jsdelivr.com/v1/package/npm/tarteaucitronjs/badge)](https://www.jsdelivr.com/package/npm/tarteaucitronjs)
-[![npm](https://img.shields.io/npm/v/tarteaucitronjs.svg)](https://www.npmjs.com/package/tarteaucitronjs) [![GitHub contributors](https://img.shields.io/github/contributors/AmauriC/tarteaucitron.js.svg)](https://github.com/AmauriC/tarteaucitron.js/graphs/contributors) [![Sponsor](https://img.shields.io/static/v1?label=Sponsor&message=%E2%9D%A4&logo=GitHub)](https://github.com/sponsors/AmauriC) [![Rate this package](https://badges.openbase.com/js/rating/tarteaucitronjs.svg?token=jS4mC7aXh9xcs1pAcB0roiEUU+mrW0GjxVICITIltSw=)](https://openbase.com/js/tarteaucitronjs?utm_source=embedded&amp;utm_medium=badge&amp;utm_campaign=rate-badge)
-
-
-![alt text](https://tarteaucitron.io/tarteaucitron.png "tarteaucitron.io")
-
-👋 Hey, I'm Amauri, a french dev that build a GDPR friendly cookie manager.
-
-tarteaucitron was initially a simple script for my personal blog (in 2013), a few months later, the Github repository is opened and tarteaucitron is now reliable and recognized.
+Une Autre Tarte Au Citron was tarteaucitron 
 
 The european cookie law regulates the management of cookies and you should ask your visitors their consent before exposing them to third party services.
 
@@ -56,14 +47,16 @@ tarteaucitron.init({
 
     "handleBrowserDNTRequest": false, /* If Do Not Track == 1, disallow all */
 
-    "removeCredit": false, /* Remove credit link */
-    "moreInfoLink": true, /* Show more info link */
+    ~~"removeCredit": false, /* Remove credit link */~~
+    ~~"moreInfoLink": true, /* Show more info link */~~
     "useExternalCss": false, /* If false, the tarteaucitron.css file will be loaded */
-    "useExternalJs": false, /* If false, the tarteaucitron.services.js file will be loaded */
+    ~~"useExternalJs": false, /* If false, the tarteaucitron.services.js file will be loaded */~~
+    "servicesJs": '<?php echo $this->url ?>../js/services.js', /* If false, the tarteaucitron.services.js file will be loaded */
+    "useExternalLang": false,  /* If false, the tarteaucitron lang file will be loaded */
 
     //"cookieDomain": ".my-multisite-domaine.fr", /* Shared cookie for subdomain website */
 
-    "readmoreLink": "", /* Change the default readmore link pointing to tarteaucitron.io */
+    ~~"readmoreLink": "", /* Change the default readmore link pointing to tarteaucitron.io */~~
     
     "mandatory": true, /* Show a message about mandatory cookies */
     "mandatoryCta": true /* Show the disabled accept button when mandatory on */
@@ -71,8 +64,6 @@ tarteaucitron.init({
 </script>
 ```
 
-# Add a service
-[Visit tarteaucitron.io](https://tarteaucitron.io/en/install/)
 
 # Customization
 
@@ -84,7 +75,7 @@ tarteaucitron.services.mycustomservice = {
   "name": "MyCustomService",
   "needConsent": true,
   "cookies": ['cookie', 'cookie2'],
-  "readmoreLink": "/custom_read_more", // If you want to change readmore link
+  "readmoreLink": "/custom_read_more", // If you want a readmore link
   "js": function () {
     "use strict";
     // When user allow cookie
@@ -129,23 +120,3 @@ tarteaucitronCustomText = {
   'engage-twitter': 'Follow us on Twitter!'
 };
 ```
-
-# Thanks to the sponsors 😊
-
-| ![Amaury Cleuziou](https://avatars.githubusercontent.com/u/26336203?v=4&s=60) |   |   |
-|---|---|---|
-|  [Amaury Cleuziou](https://github.com/MoryCorp) - first sponsor 🎉 | |  |
-| |   |   |
-
-
-# 600M on the pro version
-
-Every month, hundreds of millions of cookies 🍪 are placed after the user's consent or simply refused.
-
-[![jsdelivr](https://tarteaucitron.io/jsdelivr.png)](https://www.jsdelivr.com/package/gh/AmauriC/tarteaucitron.js)
-
-# Used by all type of website 
-
-Tarteaucitron has been around for years and is now used by thousands of companies, government sites, web agencies, ... 🦾
-
-[![Builtwith](https://tarteaucitron.io/builtwith.png)](https://trends.builtwith.com/widgets/tarteaucitron.js)

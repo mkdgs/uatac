@@ -16,7 +16,7 @@ Bonus:
 
 # How to use
 
-```diff
+```suggestion
 <script src="/tarteaucitron/tarteaucitron.js"></script>
 
 <script>
